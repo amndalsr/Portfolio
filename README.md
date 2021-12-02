@@ -1,6 +1,6 @@
 <h1 align="center"> Currículo / Portfolio 👩‍💻</h1>
 
-### Projeto proposto na disciplina Programação Web e Mobile:
+<h2 align="center">Projeto proposto na disciplina Programação Web e Mobile:</h2>
 
 <h3 align="center">✨ Para esse projeto foram utilizados: ✨</h3>
 
