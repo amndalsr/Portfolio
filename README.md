@@ -19,4 +19,4 @@
 ![port3](https://user-images.githubusercontent.com/72527935/142905645-b94aac76-f3c3-4963-98b3-9b56308ca9ef.PNG)
 
 
-*Site ainda é não responsivo.
+*Site ainda não é responsivo.
