@@ -83,7 +83,7 @@ document.getElementById('themeButton').addEventListener('click', function() {
 var comentarios = [];
 for (var i = 1; i <= 2; i++) {
     comentarios = [
-        {
+        /*{
             nome: "Usuário 1",
             avatar: "/images/foto-perfil2.png",
             data: "24 Jun 2023",
@@ -94,7 +94,7 @@ for (var i = 1; i <= 2; i++) {
             avatar: "/images/foto-perfil2.png",
             data: "25 Jun 2023",
             mensagem: "Mensagem 2"
-        },
+        },*/
     ];
 }
 
