@@ -38,9 +38,6 @@ document.getElementById('show-form-btn').addEventListener('click', function () {
     }
 });
 
-
-
-
 document.getElementById('themeButton').addEventListener('click', function() {
     var body = document.getElementById('body');
     var icon = document.getElementById('themeIcon');
