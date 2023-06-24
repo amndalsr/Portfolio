@@ -52,6 +52,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     .then(function (response) {
         if (response.ok) {
             alert('Form submission successful');
+            document.getElementById('contact-form').style.display = 'none';
             return;
         }
         throw new Error('Form submission failed: ' + response.statusText);
