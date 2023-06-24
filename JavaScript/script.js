@@ -36,25 +36,28 @@ document.getElementById('show-form-btn').addEventListener('click', function () {
     } else {
         form.style.display = "none";
     }
-})
+});
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
-
-    const formData = new FormData(this);
-
-    fetch(this.action, {
+    var url = this.action;
+    var data = new FormData(this);
+    fetch(url, {
         method: 'POST',
-        body: formData,
+        body: data,
         headers: {
             'Accept': 'application/json'
         }
-    }).then(response => {
-        console.log('Success!', response);
-        // aqui você pode adicionar alguma ação após a resposta ser bem-sucedida
-        // como exibir uma mensagem para o usuário
-    }).catch(error => {
-        console.error('Error!', error.message);
+    })
+    .then(function (response) {
+        if (response.ok) {
+            alert('Form submission successful');
+            return;
+        }
+        throw new Error('Form submission failed: ' + response.statusText);
+    })
+    .catch(function (error) {
+        console.error('Error:', error);
     });
 });
 
