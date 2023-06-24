@@ -1069,3 +1069,34 @@ body.light-mode .conteudo .guestbook-box .comentario-info .formulario .campo {
         margin-left: 160px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adicione o seu CSS atual aqui */
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#pagination .page-item {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #3f3e3ebd;
+}
+
+#pagination .page-item.active {
+    color: #CC0088;
+    font-weight: bold;
+}

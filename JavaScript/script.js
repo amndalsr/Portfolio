@@ -36,7 +36,28 @@ document.getElementById('show-form-btn').addEventListener('click', function () {
     } else {
         form.style.display = "none";
     }
+})
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        console.log('Success!', response);
+        // aqui você pode adicionar alguma ação após a resposta ser bem-sucedida
+        // como exibir uma mensagem para o usuário
+    }).catch(error => {
+        console.error('Error!', error.message);
+    });
 });
+
 
 document.getElementById('themeButton').addEventListener('click', function() {
     var body = document.getElementById('body');
@@ -53,3 +74,86 @@ document.getElementById('themeButton').addEventListener('click', function() {
         icon.classList.add('fa-sun');
     }
 });
+
+var comentarios = [];
+for (var i = 1; i <= 2; i++) {
+    comentarios = [
+        {
+            nome: "Usuário 1",
+            avatar: "/images/foto-perfil2.png",
+            data: "24 Jun 2023",
+            mensagem: "Mensagem 1"
+        },
+        {
+            nome: "Usuário 2",
+            avatar: "/images/foto-perfil2.png",
+            data: "25 Jun 2023",
+            mensagem: "Mensagem 2"
+        },
+    ];
+}
+
+var comentariosPorPagina = 5;
+var paginaAtual = 1;
+
+function criarBoxComentario(comentario) {
+    return `
+    <div class="guestbook-box">
+    <div class="pin">
+        <img src="/icons/pin-icon.png" class="pinned">
+        <p class="pin-text">Fixado</p>
+    </div>
+    <div class="post-comentario">
+        <div class="post-perfil">
+            <img src="${comentario.avatar}" class="post-foto">
+            <h3>${comentario.nome}<img src="/icons/stars-icon.png" class="post-icon1"></h3>
+            <img src="/icons/circle.png" class="circulo">
+            <p>${comentario.data}</p>
+        </div>
+        <div class="comentario-info">
+            <p>${comentario.mensagem}</p>
+        </div>
+    </div>
+    <div class="icone">
+        <img src="/icons/heart-icon.png">
+    </div>
+</div>
+    `;
+}
+
+function atualizarComentarios() {
+    var container = document.getElementById('guestbook-box-container');
+    var inicio = (paginaAtual - 1) * comentariosPorPagina;
+    var fim = inicio + comentariosPorPagina;
+    var comentariosDaPagina = comentarios.slice(inicio, fim);
+
+    container.innerHTML = '';
+    for (var comentario of comentariosDaPagina) {
+        container.innerHTML += criarBoxComentario(comentario);
+    }
+}
+
+function criarItemPaginacao(pagina, ativa) {
+    return `
+        <div class="page-item ${ativa ? 'active' : ''}" onclick="irParaPagina(${pagina})">${pagina}</div>
+    `;
+}
+
+function atualizarPaginacao() {
+    var pagination = document.getElementById('pagination');
+    var totalPaginas = Math.ceil(comentarios.length / comentariosPorPagina);
+
+    pagination.innerHTML = '';
+    for (var i = 1; i <= totalPaginas; i++) {
+        pagination.innerHTML += criarItemPaginacao(i, i === paginaAtual);
+    }
+}
+
+function irParaPagina(pagina) {
+    paginaAtual = pagina;
+    atualizarComentarios();
+    atualizarPaginacao();
+}
+
+atualizarComentarios();
+atualizarPaginacao();
