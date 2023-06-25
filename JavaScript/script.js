@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.navegador a');
+    const links = document.querySelectorAll('.navegador .lista-links a');
     const conteudos = document.querySelectorAll('.conteudo');
 
     function mostrarConteudo(event) {
