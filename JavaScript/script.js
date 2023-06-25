@@ -51,7 +51,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     })
     .then(function (response) {
         if (response.ok) {
-            alert('Form submission successful');
+            /*alert('Form submission successful');*/
             document.getElementById('contact-form').reset();
             document.getElementById('contact-form').style.display = 'none';
             return;
