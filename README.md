@@ -6,7 +6,7 @@
 
 💡 Criei esse site portfólio com o objetivo de falar mais sobre mim, mostrar projetos que criei ou estive envolvida e compartilhar os processos e as lições aprendidas ao longo do caminho.
 
-👀 Convido todos vocês a darem uma olhada. Adoraria receber feedback, dicas ou comentários que vocês possam deixar lá na seção de visitas, obrigada!
+👀 Convido vocês a darem uma olhada. Adoraria receber feedback, dicas ou comentários que vocês possam deixar lá na seção de visitas, obrigada!
 
 
 🚀 Deploy: <a href="https://planner-alpha-pearl.vercel.app">amndalsr.dev</a>
