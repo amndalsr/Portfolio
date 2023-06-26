@@ -11,8 +11,6 @@
 
 🚀 Deploy: <a href="https://planner-alpha-pearl.vercel.app">amndalsr.dev</a>
 
-🗃 Repositório no GitHub: <a href="https://github.com/amndalsr/Portfolio">Portfólio</a>
-
 🖼 Figma: <a href="https://www.figma.com/file/LoUgJsjrjw0RKp9OARfWuq/Portfolio-Amandalsr?type=design&node-id=0-1&mode=design&t=Gt3Lr5CDsxK5scym-0">Portfólio AmndaLsr</a>
 
 <img src="https://github.com/amndalsr/Portfolio/assets/72527935/e20ba115-9d80-49d8-aa06-bf10e52aeb99">
