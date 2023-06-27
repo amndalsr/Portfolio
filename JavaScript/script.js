@@ -83,13 +83,13 @@ document.getElementById('themeButton').addEventListener('click', function() {
 var comentarios = [];
 for (var i = 1; i <= 2; i++) {
     comentarios = [
-        /*{
-            nome: "Usuário 1",
-            avatar: "/images/foto-perfil2.png",
-            data: "24 Jun 2023",
-            mensagem: "Mensagem 1"
-        },
         {
+            nome: "Iverson",
+            avatar: "/images/iverson-perfil.png",
+            data: "26 Jun 2023",
+            mensagem: "Amanda é realmente notável. Além de ser extremamente inteligente e criativa, ela também é uma talentosa desenvolvedora de software. Sua mente ágil e lógica afiada a tornam uma profissional excepcional nesse campo. Ela tem a capacidade de transformar linhas de código em soluções inovadoras, construindo aplicativos e programas que facilitam a vida das pessoas. É impressionante como ela consegue unir sua criatividade artística com sua habilidade técnica, trazendo à vida projetos únicos e cativantes. Amanda é uma verdadeira inspiração."
+        },
+        /*{
             nome: "Usuário 2",
             avatar: "/images/foto-perfil2.png",
             data: "25 Jun 2023",
