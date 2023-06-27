@@ -84,17 +84,19 @@ var comentarios = [];
 for (var i = 1; i <= 2; i++) {
     comentarios = [
         {
+            nome: "André C.",
+            icon: "/icons/gostar-icon.png",
+            avatar: "/images/andre-perfil.png",
+            data: "24 Jun 2023",
+            mensagem: "Eu te amo muito amorzinho e estou muito orgulhoso do quão bem feito está essa página, chega a ser impressionante o talento absurdo que você tem parabéns, do fundo e do coração todo eu te amo. 🥰"
+        },
+        {
             nome: "Iverson",
+            icon: "/icons/foguete-icon.png",
             avatar: "/images/iverson-perfil.png",
             data: "26 Jun 2023",
             mensagem: "Amanda é realmente notável. Além de ser extremamente inteligente e criativa, ela também é uma talentosa desenvolvedora de software. Sua mente ágil e lógica afiada a tornam uma profissional excepcional nesse campo. Ela tem a capacidade de transformar linhas de código em soluções inovadoras, construindo aplicativos e programas que facilitam a vida das pessoas. É impressionante como ela consegue unir sua criatividade artística com sua habilidade técnica, trazendo à vida projetos únicos e cativantes. Amanda é uma verdadeira inspiração."
         },
-        /*{
-            nome: "Usuário 2",
-            avatar: "/images/foto-perfil2.png",
-            data: "25 Jun 2023",
-            mensagem: "Mensagem 2"
-        },*/
     ];
 }
 
@@ -111,7 +113,7 @@ function criarBoxComentario(comentario) {
     <div class="post-comentario">
         <div class="post-perfil">
             <img src="${comentario.avatar}" class="post-foto">
-            <h3>${comentario.nome}<img src="/icons/stars-icon.png" class="post-icon1"></h3>
+            <h3>${comentario.nome}<img src="${comentario.icon}" class="post-icon1"></h3>
             <img src="/icons/circle.png" class="circulo">
             <p>${comentario.data}</p>
         </div>
