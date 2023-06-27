@@ -88,7 +88,7 @@ for (var i = 1; i <= 2; i++) {
             icon: "/icons/gostar-icon.png",
             avatar: "/images/andre-perfil.png",
             data: "24 Jun 2023",
-            mensagem: "Eu te amo muito amorzinho e estou muito orgulhoso do quão bem feito está essa página, chega a ser impressionante o talento absurdo que você tem parabéns, do fundo e do coração todo eu te amo. 🥰"
+            mensagem: "Estou muito orgulhoso do quão bem feito está essa página, chega a ser impressionante o talento absurdo que você tem parabéns, do fundo e do coração todo eu te amo. 🥰"
         },
         {
             nome: "Iverson",
