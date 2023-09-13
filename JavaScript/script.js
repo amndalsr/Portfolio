@@ -84,6 +84,8 @@ var comentarios = [];
 for (var i = 1; i <= 2; i++) {
     comentarios = [
         {
+            pinicon: "/icons/pin-icon.png",
+            pintext:"Fixado",
             nome: "André C.",
             icon: "/icons/gostar-icon.png",
             avatar: "/images/andre-perfil.png",
@@ -91,11 +93,22 @@ for (var i = 1; i <= 2; i++) {
             mensagem: "Estou muito orgulhoso do quão bem feito está essa página, chega a ser impressionante o talento absurdo que você tem parabéns, do fundo e do coração todo eu te amo. 🥰"
         },
         {
+            pinicon: "/icons/pin-icon.png",
+            pintext:"Fixado",
             nome: "Iverson",
             icon: "/icons/foguete-icon.png",
             avatar: "/images/iverson-perfil.png",
             data: "26 Jun 2023",
             mensagem: "Amanda é realmente notável. Além de ser extremamente inteligente e criativa, ela também é uma talentosa desenvolvedora de software. Sua mente ágil e lógica afiada a tornam uma profissional excepcional nesse campo. Ela tem a capacidade de transformar linhas de código em soluções inovadoras, construindo aplicativos e programas que facilitam a vida das pessoas. É impressionante como ela consegue unir sua criatividade artística com sua habilidade técnica, trazendo à vida projetos únicos e cativantes. Amanda é uma verdadeira inspiração."
+        },
+        {
+            pinicon: "",
+            pintext:"",
+            nome: "Júlia",
+            icon: "/icons/flora-icon.png",
+            avatar: "/images/julia-perfil.png",
+            data: "04 Set 2023",
+            mensagem: "Muito bom Amanda! Curti muito a ideia de Design do seu site. 👏🏻👏🏻"
         },
     ];
 }
@@ -107,8 +120,8 @@ function criarBoxComentario(comentario) {
     return `
     <div class="guestbook-box">
     <div class="pin">
-        <img src="/icons/pin-icon.png" class="pinned">
-        <p class="pin-text">Fixado</p>
+        <img src="${comentario.pinicon}" class="pinned">
+        <p class="pin-text">${comentario.pintext}</p>
     </div>
     <div class="post-comentario">
         <div class="post-perfil">
