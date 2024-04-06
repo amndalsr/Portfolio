@@ -86,15 +86,6 @@ for (var i = 1; i <= 2; i++) {
         {
             pinicon: "/icons/pin-icon.png",
             pintext:"Fixado",
-            nome: "André C.",
-            icon: "/icons/gostar-icon.png",
-            avatar: "/images/andre-perfil.png",
-            data: "24 Jun 2023",
-            mensagem: "Estou muito orgulhoso do quão bem feito está essa página, chega a ser impressionante o talento absurdo que você tem parabéns, do fundo e do coração todo eu te amo. 🥰"
-        },
-        {
-            pinicon: "/icons/pin-icon.png",
-            pintext:"Fixado",
             nome: "Iverson",
             icon: "/icons/foguete-icon.png",
             avatar: "/images/iverson-perfil.png",
